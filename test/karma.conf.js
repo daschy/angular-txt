@@ -14,18 +14,24 @@ module.exports = function (config) {
     basePath: '../',
 
     // testing framework to use (jasmine/mocha/qunit/...)
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'sinon-chai', 'chai-as-promised'],
 
-    reporters: ['coverage'],
+    reporters: ['progress'],
 
     //files to coverage
     preprocessors: {
-      'src/**/*js': 'coverage',
+      'src/**/*js': ['coverage'],
     },
 
+    // coverageReporter: {
+    //   type: 'lcov',
+    //   dir: 'test/coverage/',
+    // },
     coverageReporter: {
-      type: 'lcov',
-      dir: 'test/coverage/',
+      reporters: [
+        { type: 'text-summary', },
+        { type: 'html', dir: 'coverage/', },
+      ],
     },
 
     // list of files / patterns to load in the browser
@@ -76,7 +82,7 @@ module.exports = function (config) {
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    // logLevel: config.LOG_INFO,
 
     // If browser does not capture in given timeout [ms], kill it
     captureTimeout: 60000,

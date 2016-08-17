@@ -6,7 +6,8 @@
   "directories": {},
   "scripts": {
     "postinstall": "node_modules/.bin/bower install",
-    "test": "node_modules/.bin/karma start test/karma.conf.js"
+    "test": "node_modules/.bin/karma start test/karma.conf.js",
+    "start": "node_modules/.bin/gulp serve"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,12 @@
     "jscs": "^3.0.7",
     "jshint": "^2.9.2",
     "karma": "^1.2.0",
+    "karma-chai-plugins": "^0.7.0",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.1.1",
     "karma-mocha-reporter": "^2.1.0",
     "karma-phantomjs-launcher": "^1.0.1",
+    "karma-sinon-chai": "^1.2.3",
     "lint": "^1.1.2",
     "mocha": "^3.0.2",
     "phantomjs": "^2.1.7",
