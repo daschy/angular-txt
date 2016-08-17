@@ -32,6 +32,7 @@ module.exports = function (config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'node_modules/txt.js/txt-min.js',
       'src/*.js',
       'src/**/*.js',
       'src/**/**/*.js',

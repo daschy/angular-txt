@@ -6,8 +6,13 @@
  */
 
 (function () {
-  angular.module('angular.txt', [])
-    .directive('ngDataTxt', function () {
+  'use strict';
+  var app = angular.module('angular.txt', [])
+    .provider('dataTxt', function () {
+      this.$get = ['$window', '$rootScope', function ($window, $rootScope) {}];
 
+    })
+    .directive('ngDataTxt', function () {
+      console.log('ngDataTxt directive loaded');
     });
 })();

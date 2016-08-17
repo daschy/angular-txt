@@ -25,9 +25,10 @@
   "homepage": "https://github.com/daschy/angular-txt#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "jscs": "^3.0.7",
-    "jshint-stylish": "^2.2.1",
+    "jshint": "^2.9.2",
     "karma": "^1.2.0",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.1.1",
@@ -35,9 +36,8 @@
     "karma-phantomjs-launcher": "^1.0.1",
     "lint": "^1.1.2",
     "mocha": "^3.0.2",
-    "phantomjs": "^2.1.7"
-  },
-  "dependencies": {
-    "txt.js": "^2.0.4"
+    "phantomjs": "^2.1.7",
+    "rimraf": "^2.5.4",
+    "txt.js": "^2.0.5"
   }
 }
