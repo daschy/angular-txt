@@ -1,0 +1,43 @@
+{
+  "name": "angular-txt",
+  "version": "0.0.1",
+  "description": "angular directive for teletext.io",
+  "main": "index.js",
+  "directories": {},
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install",
+    "test": "node_modules/.bin/karma start test/karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daschy/angular-txt.git"
+  },
+  "keywords": [
+    "i18n",
+    "translation",
+    "teletext.io"
+  ],
+  "author": "milo@redbabel.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daschy/angular-txt/issues"
+  },
+  "homepage": "https://github.com/daschy/angular-txt#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jshint-stylish": "^2.2.1",
+    "karma": "^1.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "lint": "^1.1.2",
+    "mocha": "^3.0.2",
+    "phantomjs": "^2.1.7"
+  },
+  "dependencies": {
+    "txt.js": "^2.0.4"
+  }
+}

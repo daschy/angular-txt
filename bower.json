@@ -1,0 +1,26 @@
+{
+  "name": "angular-txt",
+  "homepage": "https://github.com/daschy/angular-txt",
+  "authors": [
+    "daschy <milo@redbabel.com>"
+  ],
+  "description": "angular directive for teletext.io",
+  "main": "",
+  "keywords": [
+    "i18n",
+    "translation",
+    "teletext.io"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*"
+  }
+}
