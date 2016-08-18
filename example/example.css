@@ -1,0 +1,13 @@
+.panel{
+  background:grey;
+}
+.title{
+  font-size:30px;
+}
+p{
+  background-color: lightblue;
+  padding-right:40px;
+}
+.data-txt-hightlight{
+  border: 1px solid black;
+}

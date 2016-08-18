@@ -13,11 +13,13 @@ describe('angularTxt', function () {
   }));
 
   it('dataTxt provider', inject(function () {
-    expect(true).to.be(false);
+    expect(true).is.false;
   }));
 
-  it('ng-data-txt directive', inject(function () {
-    // expect(info.getUserInfo()).to.be.not.null;
+  it.only('ng-data-txt directive', inject(function () {
+    var element = angular.element('<div ng-data-txt="key"></div>');
+    element = $compile(element)($scope);
+    $scope.$digest();
   }));
 
 });
