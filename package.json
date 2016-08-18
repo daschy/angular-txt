@@ -2,7 +2,7 @@
   "name": "angular-txt",
   "version": "0.0.1",
   "description": "angular directive for teletext.io",
-  "main": "index.js",
+  "main": "src/angular-txt.js",
   "directories": {},
   "scripts": {
     "postinstall": "node_modules/.bin/bower install",
