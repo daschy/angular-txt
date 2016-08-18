@@ -23,8 +23,7 @@
 </body>
 </html>
 ```
-
-1. Ex: `<div ng-data-txt="example.key">Text to be replaced</div>`
+3. Ex: `<div ng-data-txt="example.key">Text to be replaced</div>`
 
 ## Development
 
