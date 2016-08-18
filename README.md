@@ -2,9 +2,9 @@
 
 ## Usage
 
-1. follow instructions here https://teletext.io/help/get-started
+- follow instructions here https://teletext.io/help/get-started
 
-1. include 
+- include 
 
 ```
 <!doctype html>
@@ -23,7 +23,7 @@
 </body>
 </html>
 ```
-3. Ex: `<div ng-data-txt="example.key">Text to be replaced</div>`
+- Ex: `<div ng-data-txt="example.key">Text to be replaced</div>`
 
 ## Development
 
