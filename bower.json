@@ -5,7 +5,9 @@
     "daschy <milo@redbabel.com>"
   ],
   "description": "angular directive for teletext.io",
-  "main": "",
+  "main": [
+    "src/angular-txt.js"
+  ],
   "keywords": [
     "i18n",
     "translation",
