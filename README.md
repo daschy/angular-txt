@@ -3,7 +3,7 @@
 ## Usage
 
 - follow instructions here https://teletext.io/help/get-started
-
+- bower install 'git@github.com:daschy/angular-txt.git' --save
 - include 
 
 ```
