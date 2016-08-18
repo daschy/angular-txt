@@ -6,44 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link href="img/favicon.ico" rel="shortcut icon">
-    
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="example.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="node_modules/txt.js/txt-min.js"></script>
-    <script type="text/javascript">
-        Txt.render({
-            id: "29860840-9716-435e-9965-37b079512ee7",
-            locale: 'en-EN',
-            // debug: false,
-            // editOnlyMode: true
-        });
-    </script>
+
 </head>
 
 <body ng-app="AngularTxtExample" ng-controller="ExampleCtrl">
-    <div  class="panel" >
-        <div class="title" data-txt="angularTxt.first">Here</div>
-        <p data-txt="angularTxt.second">Hola</p>
-        <button>change language</button>
+    <div class="panel">
+        <h3>Current locale: <span></span></h3>
+        <div>
+            Here should write "Placeholder1"
+            <strong><p ng-data-txt="examples.simple_title">Placeholder 1</p></strong>
+        </div>
+        <div>
+            Here should write "Custom attributes"
+            <strong><p ng-data-txt="examples.alt-title">Placeholder 2</p></strong>
+        </div>
+
     </div>
-    <div  class="panel" ng-data-txt-pippo="angularTxt.third">
-        <div class="title" >Here</div>
-        <p >Hola</p>
-        <button>change language</button>
-    </div>
 
-
-
-    <script>
+    <script type="text/javascript">
+        var locale = 'en-EN';
+        Txt.render({
+            id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
+            locale: locale,
+        });
+        $('h3>span').text(locale);
         $('button').click(function() {
-            Txt.setOptions({
-                id: "29860840-9716-435e-9965-37b079512ee7",
-                locale: 'ru-RU',
-                // debug: true,
+            Txt.refresh({
+                id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
+                locale: 'nl-NL',
             });
-            Txt.refresh();
         })
     </script>
 

@@ -16,7 +16,7 @@ module.exports = function (config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['mocha', 'sinon-chai', 'chai-as-promised'],
 
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
     //files to coverage
     preprocessors: {
@@ -29,8 +29,8 @@ module.exports = function (config) {
     // },
     coverageReporter: {
       reporters: [
-        { type: 'text-summary', },
-        { type: 'html', dir: 'coverage/', },
+        // { type: 'text-summary', },
+        { type: 'html', dir: 'test/coverage/', },
       ],
     },
 
@@ -39,6 +39,7 @@ module.exports = function (config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'node_modules/txt.js/txt-min.js',
+      'test/txt.config.js',
       'src/*.js',
       'src/**/*.js',
       'src/**/**/*.js',

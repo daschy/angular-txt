@@ -40,6 +40,7 @@
         link: function (scope, element, attr) {
           element.addClass('ng-cloak');
           var attribute = attr.$attr.ngDataTxt.split('ng-')[1];
+
           $timeout(function () {
               element.attr(attribute, attr.ngDataTxt);
             }, 0)

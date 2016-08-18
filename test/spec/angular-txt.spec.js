@@ -5,6 +5,7 @@ describe('angularTxt', function () {
   var $compile;
   var $scope;
   var $httpBackend;
+  var $timeout;
   var txtConfig = {
     locale: 'en-EN',
 
@@ -12,30 +13,27 @@ describe('angularTxt', function () {
 
   beforeEach(module('angular.txt'));
 
-  beforeEach(inject(function (_$compile_, _$rootScope_, _$httpBackend_, dataTxt) {
+  beforeEach(inject(function (_$compile_, _$rootScope_, _$httpBackend_, _$timeout_, dataTxt) {
     $compile = _$compile_;
     $scope = _$rootScope_;
-    $httpBackend = _$httpBackend_;
-    $httpBackend.when('GET', '/').respond(200, {
-      test: true
-    });
+    $timeout = _$timeout_;
   }));
 
   afterEach(inject(function () {
-    $httpBackend.verifyNoOutstandingExpectation();
-    $httpBackend.verifyNoOutstandingRequest();
-
   }));
 
-  it('dataTxt provider', inject(function () {
-    expect(true).is.false;
-  }));
+ 
 
   it.only('ng-data-txt directive', inject(function (dataTxt) {
-    // expect(dataTxt).not.toBeUndefined();
-    var element = angular.element('<div ng-data-txt="key"></div>');
+    console.log('Tests here. Txt.js does not load properly from test/txt.config.js');
+    var element = angular.element('<div ng-data-txt="examples.simple_title">Text to be replaced</div>');
     element = $compile(element)($scope);
-    $scope.$digest();
+    // $scope.$digest();
+    $timeout.flush();
+    $timeout.verifyNoPendingTasks();
+
+    console.log(element);
+    expect(element.text()).equal('Placeholder 1');
   }));
 
 });
