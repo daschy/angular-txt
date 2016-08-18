@@ -21,8 +21,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.2.0",
-    "angular-mocks": "^1.5.8"
+    "angular": "^1.2.0",
+    "angular-mocks": "*"
   },
   "resolutions": {
     "angular": "1.2.0"

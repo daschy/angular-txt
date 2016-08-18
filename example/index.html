@@ -17,18 +17,18 @@
             id: "29860840-9716-435e-9965-37b079512ee7",
             locale: 'en-EN',
             // debug: false,
-            editOnlyMode: true
+            // editOnlyMode: true
         });
     </script>
 </head>
 
 <body ng-app="AngularTxtExample" ng-controller="ExampleCtrl">
     <div  class="panel" >
-        <div class="title" ng-data-txt="angularTxt.first">Here</div>
-        <p ng-data-txt="angularTxt.second">Hola</p>
+        <div class="title" data-txt="angularTxt.first">Here</div>
+        <p data-txt="angularTxt.second">Hola</p>
         <button>change language</button>
     </div>
-    <div  class="panel" ng-data-txt="angularTxt.third">
+    <div  class="panel" ng-data-txt-pippo="angularTxt.third">
         <div class="title" >Here</div>
         <p >Hola</p>
         <button>change language</button>
@@ -38,11 +38,12 @@
 
     <script>
         $('button').click(function() {
-            Txt.refresh({
+            Txt.setOptions({
                 id: "29860840-9716-435e-9965-37b079512ee7",
                 locale: 'ru-RU',
-                debug: true,
-            })
+                // debug: true,
+            });
+            Txt.refresh();
         })
     </script>
 
