@@ -5,7 +5,9 @@
     "daschy <milo@redbabel.com>"
   ],
   "description": "angular directive for teletext.io",
-  "main": "",
+  "main": [
+    "src/angular-txt.js"
+  ],
   "keywords": [
     "i18n",
     "translation",
@@ -21,7 +23,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "*",
-    "angular-mocks": "^1.5.8"
+    "angular": "^1.2.0",
+    "angular-mocks": "*"
+  },
+  "resolutions": {
+    "angular": "1.2.0"
   }
 }

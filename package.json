@@ -2,7 +2,7 @@
   "name": "angular-txt",
   "version": "0.0.1",
   "description": "angular directive for teletext.io",
-  "main": "index.js",
+  "main": "src/angular-txt.js",
   "directories": {},
   "scripts": {
     "postinstall": "node_modules/.bin/bower install",
@@ -39,7 +39,7 @@
     "karma-sinon-chai": "^1.2.3",
     "lint": "^1.1.2",
     "mocha": "^3.0.2",
-    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.12",
     "rimraf": "^2.5.4",
     "txt.js": "^2.0.5"
   }
