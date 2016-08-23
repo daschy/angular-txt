@@ -19,18 +19,22 @@
     <div class="panel">
         <h3>Current locale: <span></span></h3>
         <div>
-            Here should write "Placeholder1"
-            <strong><p ng-data-txt="examples.simple_title">Placeholder 1</p></strong>
+            Here should write "Examples"
+            <strong><p ng-data-txt="examples.title">Text 1 here</p></strong>
         </div>
         <div>
             Here should write "Custom attributes"
-            <strong><p ng-data-txt="examples.alt-title">Placeholder 2</p></strong>
+            <strong><p ng-data-txt="examples.alt-title">Text 2 here</p></strong>
         </div>
-
     </div>
 
     <script type="text/javascript">
-        var locale = 'en-EN';
+        var paramToJSON = function paramToJSON(paramIn) {
+            paramIn = paramIn.replace('?', '').replace(new RegExp("=", 'g'), "\":\"");
+            paramIn = paramIn.replace(new RegExp('&', 'g'), "\",\"");
+            return JSON.parse("{\"" + paramIn + "\"}");
+        }
+        var locale = paramToJSON(window.location.search).locale || 'en-EN';
         Txt.render({
             id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
             locale: locale,
