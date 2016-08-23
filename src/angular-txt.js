@@ -22,7 +22,7 @@
         editButtonPostion: null,
         editOnlyMode: null,
 
-        teleTextScript: 'https://teletext.io/js/1.5.2/txt-min.js',
+        scriptUrl: 'https://teletext.io/js/1.5.2/txt-min.js',
         debug: false,
         load: true,
       };
@@ -43,7 +43,7 @@
           }
 
           function load() {
-            return angularLoad.loadScript(getOptions().teleTextScript)
+            return angularLoad.loadScript(getOptions().scriptUrl)
               .then(function () {
                 return Txt.render(options);
               })

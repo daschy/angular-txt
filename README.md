@@ -37,7 +37,7 @@
                 defaultFile: null,// Optional
                 editButtonPostion: null, // Optional
                 editOnlyMode: null,// Optional
-                teleTextScript: 'https://teletext.io/js/1.5.2/txt-min.js', // Optional
+                scriptUrl: 'https://teletext.io/js/1.5.2/txt-min.js', // Optional
                 debug: false, // Optional: default false
                 load: true, // Optional default true. If false does not load on start
             });
