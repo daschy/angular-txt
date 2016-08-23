@@ -6,14 +6,16 @@
 - bower install 'git@github.com:daschy/angular-txt.git' --save
 - include 
 
-```
+```html
 <!doctype html>
 <html ng-app="myApp">
 <head>
 
 </head>
 <body>
+    <div ng-data-txt="example.title">Text to be replaced</div>
     ...
+    <script src="bower_components/angular-load/src/angular-load.js"></script>
     <script src="bower_components/angular-txt/src/angular-txt.js"></script>
     ...
     <script>
@@ -23,14 +25,12 @@
 </body>
 </html>
 ```
-- Ex: `<div ng-data-txt="example.title">Text to be replaced</div>`
 
 ## Configuration
 ```javascript
     angular.module('myApp', ['angular-txt'])
         .config(['dataTxtProvider', function(dataTxtProvider) {
             dataTxtProvider.setOptions({
-                //Your teletxt.io id
                 id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b', // Compulsory 
                 locale: 'nl-NL', // Compulsory
                 defaultLocale: 'en-EN', // Optional
