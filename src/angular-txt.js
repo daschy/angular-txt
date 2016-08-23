@@ -16,7 +16,7 @@
     }
   }
 
-  angular.module('angular.txt', [])
+  angular.module('angular.txt', ['angularLoad'])
     .config(function () {
       if (typeof Txt === 'undefined') {
         if (typeof require === 'function') {
@@ -37,6 +37,14 @@
     .directive('ngDataTxt', function ($timeout) {
       return {
         restrict: 'A',
+        controller: function (angularLoad) {
+          angularLoad.loadScript('src/angular-txt.js').then(function () {
+            // Script loaded succesfully.
+            // We can now start using the functions from someplugin.js
+          }).catch(function () {
+            // There was some error loading the script. Meh
+          });
+        },
         link: function (scope, element, attr) {
           element.addClass('ng-cloak');
           var attribute = attr.$attr.ngDataTxt.split('ng-')[1];
