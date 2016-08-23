@@ -38,8 +38,7 @@ module.exports = function (config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'node_modules/txt.js/txt-min.js',
-      'test/txt.config.js',
+      'bower_components/angular-load/angular-load.js',
       'src/*.js',
       'src/**/*.js',
       'src/**/**/*.js',
@@ -65,7 +64,7 @@ module.exports = function (config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS',
+      'Chrome',
     ],
 
     // Which plugins to enable

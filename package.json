@@ -32,15 +32,14 @@
     "jshint": "^2.9.2",
     "karma": "^1.2.0",
     "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.1.1",
     "karma-mocha-reporter": "^2.1.0",
-    "karma-phantomjs-launcher": "^1.0.1",
     "karma-sinon-chai": "^1.2.3",
     "lint": "^1.1.2",
     "mocha": "^3.0.2",
     "phantomjs-prebuilt": "^2.1.12",
-    "rimraf": "^2.5.4",
-    "txt.js": "^2.0.5"
+    "rimraf": "^2.5.4"
   }
 }

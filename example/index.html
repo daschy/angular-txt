@@ -9,43 +9,22 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="example.css" rel="stylesheet" />
-
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="node_modules/txt.js/txt-min.js"></script>
-
 </head>
 
-<body ng-app="AngularTxtExample" ng-controller="ExampleCtrl">
+<body ng-app="AngularTxtExample" ng-controller="ExampleCtrl" ng-cloak>
     <div class="panel">
-        <h3>Current locale: <span></span></h3>
+        <h3>Current locale: <span>{{locale}} (default: {{defaultLocale}})</span></h3>
         <div>
             Here should write "Examples"
-            <strong><p ng-data-txt="examples.title">Text 1 here</p></strong>
+            <strong><p ng-data-txt="examples.title">Text 1 not translated</p></strong>
         </div>
         <div>
             Here should write "Custom attributes"
-            <strong><p ng-data-txt="examples.alt-title">Text 2 here</p></strong>
+            <strong><p ng-data-txt="examples.alt-title">Text 2 not translated</p></strong>
         </div>
     </div>
 
     <script type="text/javascript">
-        var paramToJSON = function paramToJSON(paramIn) {
-            paramIn = paramIn.replace('?', '').replace(new RegExp("=", 'g'), "\":\"");
-            paramIn = paramIn.replace(new RegExp('&', 'g'), "\",\"");
-            return JSON.parse("{\"" + paramIn + "\"}");
-        }
-        var locale = paramToJSON(window.location.search).locale || 'en-EN';
-        Txt.render({
-            id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
-            locale: locale,
-        });
-        $('h3>span').text(locale);
-        $('button').click(function() {
-            Txt.refresh({
-                id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
-                locale: locale,
-            });
-        })
     </script>
 
     <script src="bower_components/angular/angular.js"></script>
