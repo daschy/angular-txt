@@ -15,7 +15,7 @@
         <div ng-data-txt="example.title">Text to be replaced</div>
         ...
         <script src="bower_components/angular-load/src/angular-load.min.js"></script>
-        <script src="bower_components/angular-txt/dist/angular-txt.min.js"></script>
+        <script src="bower_components/angular-txt/src/angular-txt.js"></script>
         ...
         <script>
             var myApp = angular.module('myApp', ['angular.txt']);
