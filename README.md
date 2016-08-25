@@ -34,7 +34,7 @@ angular.module('myApp', ['angular-txt'])
             locale: 'nl-NL', // Compulsory
             defaultLocale: 'en-EN', // Optional
             defaultFile: null,// Optional
-            editButtonPostion: null, // Optional
+            editButtonPosition: null, // Optional
             editOnlyMode: null,// Optional
             scriptUrl: 'https://teletext.io/js/1.5.2/txt-min.js', // Optional
             debug: false, // Optional: default false
