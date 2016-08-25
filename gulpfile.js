@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var rimraf = require('rimraf');
+var minify = require('gulp-minify');
 
-gulp.task('serve', ['clean'], function () {
+gulp.task('serve', function () {
 
   browserSync.init({
     host: '0.0.0.0',
@@ -21,6 +22,18 @@ gulp.task('serve', ['clean'], function () {
   });
 
   gulp.watch('{src,example}/{,**/}*.{js,html,css}').on('change', browserSync.reload);
+});
+
+
+gulp.task('dist', ['clean'], function () {
+  return gulp.src('src/*.js')
+    .pipe(minify({
+      ext: {
+        min: '.min.js',
+      },
+      exclude: ['tasks'],
+    }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function () {

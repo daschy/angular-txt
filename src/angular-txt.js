@@ -63,7 +63,7 @@
         },
       ];
     })
-    .directive('ngDataTxt', function ($log, $timeout, dataTxt) {
+    .directive('ngDataTxt', ['$log', '$timeout', 'dataTxt', function ($log, $timeout, dataTxt) {
       return {
         restrict: 'A',
         link: function (scope, element, attr) {
@@ -85,5 +85,5 @@
             });
         },
       };
-    });
+    }]);
 })();

@@ -19,7 +19,7 @@ angular
     dataTxtProvider.setOptions({
       id: '695c6c04-10d6-4c2e-b05d-72f5fcaaea6b',
       locale: locale,
-      debug: true,
+      debug: false,
     });
 
   })
@@ -30,4 +30,5 @@ angular
     // dataTxt.reload();
     $scope.locale = dataTxt.getOptions().locale;
     $scope.defaultLocale = dataTxt.getOptions().defaultLocale;
+    $scope.id = dataTxt.getOptions().id;
   });

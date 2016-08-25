@@ -13,7 +13,7 @@
 
 <body ng-app="AngularTxtExample" ng-controller="ExampleCtrl" ng-cloak>
     <div class="panel">
-        <h3>Current locale: <span>{{locale}} (default: {{defaultLocale}})</span></h3>
+        <h3>Current locale: <span>{{locale}} (default: {{defaultLocale}} <small>id:{{id}}</small>) </span></h3>
         <div>
             Here should write "Examples"
             <strong><p ng-data-txt="examples.title">Text 1 not translated</p></strong>
@@ -30,7 +30,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-mocks/angular-mocks.js"></script>
     <script src="bower_components/angular-load/angular-load.js"></script>
-    <script src="src/angular-txt.js"></script>
+    <script src="dist/angular-txt.js"></script>
     <script src="example.js"></script>
 </body>
 

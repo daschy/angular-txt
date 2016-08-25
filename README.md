@@ -15,8 +15,8 @@
 <body>
     <div ng-data-txt="example.title">Text to be replaced</div>
     ...
-    <script src="bower_components/angular-load/src/angular-load.js"></script>
-    <script src="bower_components/angular-txt/src/angular-txt.js"></script>
+    <script src="bower_components/angular-load/src/angular-load.min.js"></script>
+    <script src="bower_components/angular-txt/dist/angular-txt.min.js"></script>
     ...
     <script>
         var myApp = angular.module('myApp', ['angular.txt']);
@@ -51,7 +51,7 @@
 
 1. `npm start` 
 
-1. open browser `http://localhost:8081?locale=en-EN`
+1. open browser `http://localhost:8081?locale=nl-NL`
 
 ## Tests
 
