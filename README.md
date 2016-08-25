@@ -3,7 +3,7 @@
 ## Usage
 
 - follow instructions here https://teletext.io/help/get-started
-- `bower install 'git@github.com:redbabel/angular-txt.git' --save`
+- `bower install angular-txt --save`
 - include 
     ```html
     <!doctype html>
