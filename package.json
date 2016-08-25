@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daschy/angular-txt.git"
+    "url": "git+https://github.com/redbabel/angular-txt.git"
   },
   "keywords": [
     "i18n",
@@ -21,9 +21,9 @@
   "author": "milo@redbabel.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daschy/angular-txt/issues"
+    "url": "https://github.com/redbabel/angular-txt/issues"
   },
-  "homepage": "https://github.com/daschy/angular-txt#readme",
+  "homepage": "https://github.com/redbabel/angular-txt#readme",
   "devDependencies": {
     "bower": "^1.7.9",
     "browser-sync": "^2.14.0",

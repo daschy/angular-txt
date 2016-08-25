@@ -3,7 +3,7 @@ var browserSync = require('browser-sync').create();
 var rimraf = require('rimraf');
 var minify = require('gulp-minify');
 
-gulp.task('serve', function () {
+gulp.task('serve', ['dist'], function () {
 
   browserSync.init({
     host: '0.0.0.0',
